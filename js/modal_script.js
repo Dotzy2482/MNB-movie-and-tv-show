@@ -57,7 +57,7 @@ window.onclick = function(event) {
   }
 }
 
-fetch("/json/descriptions.json")
+fetch("json/descriptions.json")
   .then(response => response.json())
   .then(data => {
     descriptions = data;
@@ -111,7 +111,7 @@ checkbox.addEventListener('change', () => {
 });
 
 
-fetch("/json/descriptions.json")
+fetch("json/descriptions.json")
   .then(response => response.json())
   .then(data => {
     descriptions = data;
